@@ -779,3 +779,10 @@ h3.my-profession {
   font-weight: 500;
   color: #151515;
 }
+
+.email,
+.website {
+  text-decoration: none;
+  font-weight: 500;
+  color: #151515;
+}
