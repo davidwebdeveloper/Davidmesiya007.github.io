@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("DS-DIGI.TTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+.day-active {
+  color: rgba(255, 195, 18, 1) !important;
+}
+.day-name {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+  color: rgba(113, 128, 147, 0.2);
+}
+
+.container .time {
+  font-family: "digital-clock-font", sans-serif;
+  font-size: 96px;
+  /* font-weight: ; */
+  display: flex;
+  justify-content: center;
+  color: rgba(76, 209, 55, 1);
+  gap: 20px;
+}
+.colon {
+  width: 50px;
+  height: 100px;
+  animation: blink 1s ease infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.merit {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.date {
+  font-family: "digital-clock-font", sans-serif;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 12px; */
+  color: rgba(234, 32, 39, 1);
+}
+.month {
+  color: #333;
+  font-size: 18px;
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.active {
+  color: rgba(76, 209, 55, 1) !important;
+}
+.num {
+  width: 40px;
+  height: 100px;
+  position: relative;
+  text-align: right;
+  /* background: red; */
+}
+.num::before {
+  content: "0";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: rgba(113, 128, 147, 0.1);
+  z-index: -1;
+}
+.month-name {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+}
