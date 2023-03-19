@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+/* Basic Styles */
 :root {
   --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff;
@@ -623,9 +624,14 @@ h3.my-profession {
   overflow: hidden;
   cursor: pointer;
 }
+.portfolio .portfolio-item-inner .portfolio-img {
+  height: 200px;
+}
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
+  height: 100%;
   display: block;
+  background-image: cover;
 }
 /* ************** */
 /* Contact section */
@@ -765,4 +771,11 @@ h3.my-profession {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+
+.email,
+.website {
+  text-decoration: none;
+  font-weight: 500;
+  color: #151515;
 }
