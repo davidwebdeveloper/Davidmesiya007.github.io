@@ -148,7 +148,7 @@
                         <p>Birthday : <span>20 Apr 2002</span></p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Age : <span>20</span></p>
+                        <p>Age : <span>21</span></p>
                       </div>
                       <div class="info-item padd-15">
                         <p>
@@ -175,7 +175,7 @@
                         </p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Degree : <span>IT</span></p>
+                        <p>Degree : <span>B. Tech (IT)</span></p>
                       </div>
                       <div class="info-item padd-15">
                         <p>phone <span>+91 6381962502</span></p>
@@ -737,6 +737,7 @@
             <div class="row">
               <form
                 class="contact-form padd-15"
+                id="form"
                 onsubmit="sendMail(); reset(); return false;"
               >
                 <div class="row">
@@ -787,7 +788,9 @@
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" id="submit" class="btn">
+                      Send Message
+                    </button>
                   </div>
                 </div>
               </form>
