@@ -24,7 +24,7 @@
 const form = document.querySelector("#form");
 const submitButton = document.querySelector("#submit");
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbz_0smGkjuCXnVgti-fi3EdCJo78SNqZrORsgsaMuo6v0Ic4RjHHPs302cew7Ylrp5N/exec";
+  "https://script.google.com/macros/s/AKfycbyzzbB96NU5kadd7TwxdE26Q5jbiCYltXnnyeNBzk0Yd2r-LG3OdABj0LT8UoOZkVKU/exec";
 
 form.addEventListener("submit", (e) => {
   submitButton.disabled = true;
